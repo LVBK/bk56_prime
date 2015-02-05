@@ -2,9 +2,15 @@ source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.0'
-# Use mysql as the database for Active Record
+gem 'rails', '4.1.2'
+# Use bootstrap to custom user interface
+gem 'bootstrap-sass', '2.0.0'
+# Use sqlite3 as the database for Active Record
 gem 'mysql2'
+# Use model annotation
+gem 'annotate', '~> 2.4.1.beta'
+
+gem 'protected_attributes'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
@@ -13,6 +19,9 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer',  platforms: :ruby
+
+# Use encrypted password
+gem 'bcrypt-ruby', '3.1.2'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
