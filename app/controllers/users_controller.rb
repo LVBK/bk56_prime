@@ -12,7 +12,7 @@ class UsersController < ApplicationController
   	@user = User.new(user_params)
   	if @user.save
       log_in @user
-      flash[:success] = "ITQ&A!JAPAN"
+      flash[:success] = "サインアップ　サクセス"
   		redirect_to login_path
   	else
   		render 'new'
