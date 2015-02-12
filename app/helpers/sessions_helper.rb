@@ -22,12 +22,19 @@ module SessionsHelper
 		!current_user.nil?
 	end
 
+	# @Bich
+	# Method: luu email vs password
+	# @param user
+
 	def remember(user)
 		user.remember
 		cookies.permanent.signed[:user_id] = user.id
 		cookies.permanent[:remember_token] = user.remember_token
 	end
 
+	# @Bich
+	# Method: forget
+	# @param user
 	def forget(user)
 		user.forget
 		cookies.delete(:user_id)
