@@ -40,7 +40,9 @@ module SessionsHelper
 		cookies.delete(:user_id)
 		cookies.delete(:remember_token)
 	end
-
+	# @Luong
+	# @param
+	# Method Log_out
 	def log_out
 		forget(current_user)
 		session.delete(:user_id)
